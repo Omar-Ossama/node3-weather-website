@@ -47,6 +47,7 @@ app.get('/help', (req, res) =>{
 
 })
 app.get('/weather', (req, res) =>{
+    
     if(!req.query.address){
         return res.send({
             error: 'you must provide an address'
@@ -65,7 +66,7 @@ app.get('/weather', (req, res) =>{
        
          forecast(latitude, longitude, (error, forecastData) => {
             if(error){
-                return res,send({
+                return res.send({
                      error
                 })
             } 
