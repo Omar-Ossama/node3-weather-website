@@ -34,7 +34,8 @@ app.get('', (req, res) =>{
 app.get('/about', (req, res) =>{
     res.render('about', {
         title:'About me', 
-        name: 'Omar Ossama'
+        name: 'Omar Ossama',
+        message: 'This sie was created by Omar Ossama. It uses data form  weatherstack.com and mapbox.com! '
     })
 
 })
@@ -42,7 +43,8 @@ app.get('/about', (req, res) =>{
 app.get('/help', (req, res) =>{
     res.render('help', {
         title: 'Help',
-        name: 'Omar Ossama'
+        name: 'Omar Ossama',
+        message : 'Get Help'
     })
 
 })

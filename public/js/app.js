@@ -15,6 +15,7 @@ weatherForm.addEventListener('submit', (e) =>{
     Promise.json().then((data) =>{
         if(data.error){
             messageOne.textContent = data.error 
+            messageTwo.textContent = ''
         } else {
            
             messageOne.textContent = data.location
